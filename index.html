@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberShop Pro - Sua Barbearia Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">✂️ BarberShop Pro</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#agendamento">Agendar</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à BarberShop Pro</h1>
+            <p>O melhor serviço de barbearia da região</p>
+            <button class="btn btn-primary" onclick="document.getElementById('agendamento').scrollIntoView({behavior: 'smooth'})">Agendar Agora</button>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Bem-vindo à BarberShop Pro, a melhor barbearia da região! Com mais de 10 anos de experiência, oferecemos serviços premium de corte de cabelo, barba e sobrancelha.</p>
+                    <p>Nossos barbeiros são profissionais qualificados e sempre atualizados com as últimas tendências do mercado.</p>
+                </div>
+                <div class="sobre-stats">
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Anos de Experiência</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Clientes Satisfeitos</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5</h3>
+                        <p>Barbeiros Profissionais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">✂️</div>
+                    <h3>Corte de Cabelo</h3>
+                    <p>Cortes modernos e clássicos com as melhores técnicas</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">🧔</div>
+                    <h3>Barba</h3>
+                    <p>Aparagem, design e tratamento completo da barba</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">👁️</div>
+                    <h3>Sobrancelha</h3>
+                    <p>Design e aparagem profissional de sobrancelhas</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">💆</div>
+                    <h3>Combo Completo</h3>
+                    <p>Cabelo, barba e sobrancelha - pacote econômico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preços -->
+    <section id="precos" class="precos">
+        <div class="container">
+            <h2>Tabela de Preços</h2>
+            <div class="precos-grid">
+                <div class="preco-card">
+                    <div class="preco-header">
+                        <h3>✂️ Corte de Cabelo</h3>
+                    </div>
+                    <div class="preco-body">
+                        <div class="preco-item">
+                            <span>Corte Básico</span>
+                            <span class="valor">R$ 40,00</span>
+                        </div>
+                        <div class="preco-item">
+                            <span>Corte Premium</span>
+                            <span class="valor">R$ 60,00</span>
+                        </div>
+                        <div class="preco-item">
+                            <span>Corte + Luzes</span>
+                            <span class="valor">R$ 80,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preco-card">
+                    <div class="preco-header">
+                        <h3>🧔 Serviço de Barba</h3>
+                    </div>
+                    <div class="preco-body">
+                        <div class="preco-item">
+                            <span>Aparagem Simples</span>
+                            <span class="valor">R$ 25,00</span>
+                        </div>
+                        <div class="preco-item">
+                            <span>Design + Aparagem</span>
+                            <span class="valor">R$ 40,00</span>
+                        </div>
+                        <div class="preco-item">
+                            <span>Barba Completa</span>
+                            <span class="valor">R$ 50,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preco-card">
+                    <div class="preco-header">
+                        <h3>👁️ Sobrancelha</h3>
+                    </div>
+                    <div class="preco-body">
+                        <div class="preco-item">
+                            <span>Aparagem</span>
+                            <span class="valor">R$ 15,00</span>
+                        </div>
+                        <div class="preco-item">
+                            <span>Design</span>
+                            <span class="valor">R$ 25,00</span>
+                        </div>
+                        <div class="preco-item">
+                            <span>Design + Coloração</span>
+                            <span class="valor">R$ 35,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="agendamento">
+        <div class="container">
+            <h2>Agende seu Horário</h2>
+            <div class="agendamento-container">
+                <div class="agendamento-form">
+                    <form id="formAgendamento" onsubmit="agendar(event)">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">Serviço</label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="Corte Básico - R$ 40">Corte Básico - R$ 40</option>
+                                <option value="Corte Premium - R$ 60">Corte Premium - R$ 60</option>
+                                <option value="Corte + Luzes - R$ 80">Corte + Luzes - R$ 80</option>
+                                <option value="Aparagem Simples - R$ 25">Aparagem Simples - R$ 25</option>
+                                <option value="Design Barba - R$ 40">Design Barba - R$ 40</option>
+                                <option value="Barba Completa - R$ 50">Barba Completa - R$ 50</option>
+                                <option value="Aparagem Sobrancelha - R$ 15">Aparagem Sobrancelha - R$ 15</option>
+                                <option value="Design Sobrancelha - R$ 25">Design Sobrancelha - R$ 25</option>
+                                <option value="Combo Completo - R$ 120">Combo Completo - R$ 120</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data">Data</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hora">Horário</label>
+                            <select id="hora" name="hora" required>
+                                <option value="">Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="barbeiro">Barbeiro</label>
+                            <select id="barbeiro" name="barbeiro" required>
+                                <option value="">Selecione um barbeiro</option>
+                                <option value="Carlos">Carlos (Especialista em Cortes)</option>
+                                <option value="Fernando">Fernando (Especialista em Barba)</option>
+                                <option value="João">João (Experiente)</option>
+                                <option value="Pedro">Pedro (Premium)</option>
+                                <option value="Qualquer">Qualquer Disponível</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="observacoes">Observações</label>
+                            <textarea id="observacoes" name="observacoes" placeholder="Conte-nos algo especial sobre seu atendimento..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+                    </form>
+                </div>
+
+                <div class="agendamentos-lista">
+                    <h3>Seus Agendamentos</h3>
+                    <div id="listaAgendamentos" class="lista-agendamentos">
+                        <p class="vazio">Nenhum agendamento ainda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horário de Funcionamento -->
+    <section class="horario">
+        <div class="container">
+            <h2>Horário de Funcionamento</h2>
+            <div class="horario-grid">
+                <div class="horario-card">
+                    <h3>📅 Segunda a Sexta</h3>
+                    <p>09:00 - 19:00</p>
+                </div>
+                <div class="horario-card">
+                    <h3>📅 Sábado</h3>
+                    <p>09:00 - 17:00</p>
+                </div>
+                <div class="horario-card">
+                    <h3>📅 Domingo</h3>
+                    <p>Fechado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-grid">
+                <div class="contato-card">
+                    <div class="contato-icon">📍</div>
+                    <h3>Localização</h3>
+                    <p>Rua Principal, 123<br>São Paulo - SP<br>CEP: 01310-100</p>
+                </div>
+                <div class="contato-card">
+                    <div class="contato-icon">📞</div>
+                    <h3>Telefone</h3>
+                    <p>(11) 3456-7890<br>(11) 99999-8888<br>WhatsApp</p>
+                </div>
+                <div class="contato-card">
+                    <div class="contato-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>contato@barbershop.com.br<br>agendamento@barbershop.com.br</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BarberShop Pro. Todos os direitos reservados. Desenvolvido com ✂️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
