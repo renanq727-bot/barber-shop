@@ -91,7 +91,7 @@ Depois acesse: `http://localhost:8000`
 
 ### 3. **Sobre**
 - História da barbearia
-- Estatísticas (anos, clientes, barbeiros)
+- Estatísticas (avaliações, barbeiros)
 
 ### 4. **Serviços**
 - Corte de cabelo
